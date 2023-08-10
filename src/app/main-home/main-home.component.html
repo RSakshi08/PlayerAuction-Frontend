@@ -1,0 +1,22 @@
+
+    
+
+      <div class="container">
+  
+          <div class="row ">
+              <ng-container *ngFor="let cs of course">
+                  <div class="card col-md-2"  >
+                      <img class="card-img-top" src="{{cs.image}}">
+                      <div class="card-body">
+                          <h5 class="card-title">{{cs.name}}</h5>
+                          <p class="card-text">{{cs.description}}</p>
+                          <a href="#" class="btn btn-primary" routerLink="{{cs.link}}">Open</a>
+                      </div>
+                  </div>
+              </ng-container>   
+          </div>
+         
+      </div>
+ 
+    
+  
